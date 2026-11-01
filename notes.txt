@@ -1,0 +1,150 @@
+Javascript:
+
+    Definition:
+        Javascript is a scripting language as well as programming language.
+        JS is Dynamically typed programming
+        JavaScript having single Call Stack.
+    
+    Uses:
+        - Using JavaScript we can build Dynamic web applications.
+        - Using JS , we can add functionalities to the web pages.
+        - Here we can achieve DOM(Document Object Model) functionalities , using that we can manipulate HTML and  CSS.
+        - Here we can fetch Data from the server(APIs) and also send data to the server.
+    
+    History:
+        - 1991
+        - Mocha(1995) by Net Scope(Browser Company)
+        -  LiveScript
+        -  JavaScript
+        - ECMA added new feature then, release 1st version -> ES1(ECMA Script version1)
+        - ES6 is the stable version currently used mostly.
+        - ES16 is the current max version (released April,2026)
+    
+    Implementation:
+        -Inline
+                example: <button onClick="">..</button>
+
+        -Internal
+            - <script>..</script> element is written at the end of body element, because the HTML should be loaded first.
+            - we can use "defer" attribute to write script element anywhere.
+            - ex: <script defer> .. </script>
+        
+        -External
+            
+    Q- Write and Bring 15  Browser names and their respective Javascript engine names.
+
+    Tokens:
+        - tokens are the smallest units in the JS Code
+        - Types:
+            1. Identifiers
+                - Identifiers are the names given to the elements in the code , like variable names, class names, function names.
+                - In place of identifiers we can't use Keywords.
+
+            2. Keywords
+                - Keywords are the predefined words which have their own meaning.
+                - In JS, total of 66 keywords are there.
+
+            3. Literals
+
+            4. Operators
+                - There are a total of 9 Operators in JS.
+
+            5. Seperators
+                - . , "" '' : ; {} [] () <>
+
+            6. Comments
+                - //single-line Comments
+                - /* Multi
+                    Line Comments */
+    Datatypes:
+        - Datatype represents the type of the data we are storing on that variable
+        Types:
+            1. Primitive Datatypes
+                i. number
+                ii. string
+                iii. boolean
+                iv. null
+                v. undefine
+                vi. symbol
+                vii. bigint
+            
+            2. Non-Primitive Datatypes
+                i. Arrays:
+                    - Arrays are the linear data structures used to store the collection of homogeneous or heterogeneous data.
+                    - JS Array Declaration:
+                        1. Literal Way
+                        2. Using "new" keyword
+                    
+                ii. Objects
+                iii. functions
+    Loops:
+        - for Loop
+        - while loop
+        - do while loop
+        - for-of loop (arrays/strings) -> only values
+        - for-in loop (arrays/strings) -> only index's 
+          for(let ind  in arr){
+            console.log()
+          }
+        - for Each loop
+        
+        Important:
+        - map()
+            example:
+                let prices=[500,102,456,789,890,5440];
+                console.log(prices);
+
+                let discountedPrices=prices.map((x)=>{
+                    return  x-x/10;
+                })
+
+                let modifiedPrices=discountedPrices.map((v)=>{
+                    return v+250;
+                })
+
+        - filter()
+            example:
+                let filteredPrices=modifiedPrices.filter((x)=>{
+                    return x>200&&x<544;
+                })
+
+        - reduce()
+            example:
+                const totalPrice=filterdPrices.reduce((acl,val)=>{
+                    return acl+val
+                },500)
+
+    Objects:
+        - objects are the real time entities used to store data in the form of key and value pair.
+        - In JS object Declaration:
+            i. literal Way
+                Syntax:
+                    variableType variableName={key1:value,key2:value};
+            ii. Using new Keywords
+                Syntax:
+                    variableType variableName=new Object({
+                        key1:value,
+                        key2:value
+                    })
+                
+            Example:
+                let empDetails={
+                    name:"Veren Hatake",
+                    role: "aura farmer",
+                    salary: "Memory Overflow",
+                    skills: ["math","cricket","speed","chakra"]
+                }
+            - Object.seal(objectName)
+            - Object.freeze(objectName)
+            - Object.keys(objectName),Object.values(objectName),Object.entries(objectName)
+
+    Functions:
+        - Functions are the block of statements which will be execute when ever it is called.
+        Note: Using Functions we can perform code resuability.
+        - And also increase Code readibility
+        
+        Types:
+        1. User-Defined Functions
+        2. Pre-Defined Functions
+        
+    
